@@ -1,0 +1,1054 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+}
+
+h1{
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2{
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h3{
+  font-size: 16px;
+  line-height: 24px;
+  color: #222;
+}
+
+
+h4{
+  font-size: 20px;
+  color: #222;
+}
+
+h6{
+  font-weight: 700;
+  font-size: 10px;
+}
+/*
+p{
+  font-size: 16px;
+  color:#465b52;
+  margin: 15px 0 20px 0; 
+}/*
+
+ /* Applying the background image to the entire body */
+ /* Carousel container styling */
+.carousel {
+  position: relative;
+  max-width: 100%;
+ 
+  justify-content: center;
+   /* Ensures no overflow beyond the container */
+}
+
+/* Card container to display cards in a row */
+.card-container {
+  display: flex;
+  transition: transform 0.5s ease; /* Smooth sliding effect */
+}
+
+/* Individual card styling */
+.card {
+  width: 300px;
+  margin: auto;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;  /* Add this to enable flexbox */
+  flex-direction: column; /* Stack contents vertically */
+  justify-content: space-between; /* Center content horizontally */
+  align-items: center;
+  padding: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for cards */
+.card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Elevated shadow on hover */
+}
+
+/* Card image styling */
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover; /* Keeps the image proportionate */
+}
+
+/* Styling for the box container */
+.box-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+/* Styling for individual boxes */
+.box {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+/* Card name styling */
+.name h2 {
+  margin: 10px 0;
+  text-align: center;
+  color: #333;
+}
+
+/* Description text styling */
+.desc {
+  padding: 0 15px;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Read more button styling */
+.button {
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  padding: 8px;
+  margin: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button */
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Carousel button styling */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Position for the previous and next buttons */
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+  background-image: url('./images/your-background-image.jpg'); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Makes the background image stay in place when scrolling */
+}
+
+
+
+body::-webkit-scrollbar {
+  width: 10px; /* scrollbar width */
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent; /* scrollbar track color */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #f9004d; /* scrollbar thumb color */
+  border-radius: 20px; /* scrollbar thumb border radius */
+  border: 2px solid #ffffff; /* scrollbar thumb border */
+}
+
+
+  .hero {
+    scroll-behavior: smooth;
+    height: 100vh;
+    width: 100%;
+    background-image: url('./images/WhatsApp\ Image\ 2024-10-20\ at\ 2.47.03\ AM.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; /* This line creates the parallax effect */
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      background-attachment: scroll; /* Disable parallax on smaller screens */
+    }
+  }
+  
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 45px 8%;
+}
+
+.logo {
+  color: white;
+  font-size: 35px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+span {
+  color: #f9004d;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+nav ul li a:hover {
+  color: #f9004d;
+  transition: 0.4s;
+}
+
+.btn {
+  background-color: #f9004d;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: transform 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+}
+
+h1 {
+  color: white;
+  margin: 20px 0;
+  font-size: 75px;
+}
+
+h3 {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+h4 {
+  color: #fcfcfc;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.newslatter form {
+  width: 280px;
+  max-width: 100%;
+  position: relative;
+}
+
+.newslatter form input:first-child {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 15px;
+  border: 2px solid #f9004d;
+  outline: none;
+  border-radius: 30px;
+}
+
+.newslatter form input:last-child {
+  position: absolute;
+  display: inline-block;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: #f9004d;
+  color: white;
+  top: 6px;
+  right: -140px;
+}
+
+.newslatter form input:hover:last-child {
+  transition: 0.1;
+  transform: scale(1.05);
+  background-color: #000;
+}
+
+.about {
+  width: 100%;
+  padding: 100px 0;
+  background-color: #191919;
+}
+
+.about img {
+  width: 430px;
+  transition: 0.5s;
+}
+
+.about img:hover {
+  transform: scale(1.01);
+}
+
+.about-text {
+  width: 550px;
+}
+
+.main {
+  width: 1130px;
+  max-width: 95%;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-text h2 {
+  color: white;
+  font-size: 75px;
+  margin-bottom: 20px;
+}
+
+.about-text h5 {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.about-text p {
+  color: #fcfcfc;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 45px;
+}
+
+button {
+  background-color: #f9004d;
+  color: #fff;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+button:hover {
+  background-color: transparent;
+  border: 2px solid #f9004d;
+  cursor: pointer;
+}
+
+.service {
+  background-color: #101010;
+  width: 100%;
+  padding: 100px 0;
+}
+
+.title h2 {
+  color: white;
+  font-size: 75px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.card-wrapper {
+  height: 405px;
+  width: 80%;
+  padding: 20px 35px;
+  background: #191919;
+  border-radius: 20px;
+  margin: 15px;
+  text-align: center;
+  justify-content: center;
+}
+
+.card-wrapper i {
+  font-size: 50px;
+  color: #f9004d;
+  margin: 25px 0;
+}
+
+h5 {
+  color: white;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+.contact-me {
+  width: 100%;
+  height: 290px;
+  background: #191919;
+  display: inline-flex;
+  align-items: left;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.contact-me p {
+  color: white;
+  margin-left: 40px;
+}
+
+.contact-me .button-two {
+  margin-left: 40px;
+  width:18%;
+  font-size: 30px;
+  display: inline;
+  font-weight: bold;
+  margin-bottom: 25px;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+  justify-content: center;
+
+  background-color: #f9004d;
+  color: white;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+.contact-me .button-two:hover {
+  background-color: transparent;
+  border: 2px solid #f9004d;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  height: 400px;
+  background: #101010;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p:nth-child(1) {
+  font-size: 30px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+footer p:nth-child(2) {
+  color: white;
+  font-size: 17px;
+  width: 500px;
+  line-height: 26px;
+  text-align: center;
+}
+/* Wrapper for the grid of cards */
+.wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap: 20px;
+  max-width: 1350px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+/* Individual card styling */
+.box {
+  background: linear-gradient(145deg, #d3d3d3, #b0b0b0); /* Subtle gradient background */
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.1); /* Elevated shadow for a floating effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden; /* Ensures content stays within the rounded corners */
+}
+
+/* Hover effect for cards */
+.box:hover {
+  transform: translateY(-10px); /* Lifts the card slightly on hover */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+/* Image styling within the card */
+img {
+  width: 50%;
+  height: 250px; /* Adjusted height for better proportions */
+  display: inline;
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  border-radius: 20px 20px 0 0; /* Rounded corners at the top */
+  transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+/* Hover effect for images */
+.box:hover img {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Text styling inside the card */
+.text {
+  text-align: center;
+  color: #fff;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.7); /* Dark background for better readability */
+  border-radius: 0 0 20px 20px; /* Rounded corners at the bottom */
+  transition: background 0.3s ease;
+}
+
+/* Hover effect for text */
+.box:hover .text {
+  background: rgba(0, 0, 0, 0.85); /* Darkens slightly on hover */
+}
+
+/* Paragraph text styling */
+p {
+  font-size: 18px;
+  color: #e0e0e0; /* Lighter text color for readability */
+  margin: 0;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for paragraph text */
+.box:hover p {
+  color: #fff; /* Brightens text color on hover */
+}
+
+/*.wrap{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap: 20px;
+  max-width: 1350px;
+  margin: auto;
+  margin-top: 50px;
+   
+
+}
+.box{
+  background: gray;
+  border-radius: 20px;
+}
+img{
+  width:100%;
+  height: 300px;
+  border-radius: 20px;
+}
+
+
+  
+.text{
+  text-align: center;
+  color:#fff;
+}
+p{
+  font-size:20px;
+} */
+.social a {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  background: #f9004d;
+  border-radius: 50%;
+  margin: 22px 10px;
+  color: white;
+  font-size: 20px;
+}
+
+.social a:hover {
+  transform: rotate(360deg) scale(1.3);
+  transition: 0.5s;
+}
+
+.end {
+  color: white;
+  bottom: 10px;
+  font-size: 10px;
+}
+.newslatter form {
+  /* width: 380px; */
+  width: 280px;
+  max-width: 100%;
+  position: relative;
+}
+.newslatter form input:first-child {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 130px 14px 15px;
+  border: 2px solid #f9004d;
+  outline: none;
+  border-radius: 30px;
+}
+.newslatter form input:last-child {
+  position: absolute;
+  display: inline-block;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: #f9004d;
+  color: white;
+  box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+  top: 6px;
+  right: -140px;
+}
+.newslatter form input:hover:last-child {
+  transition: 0.1;
+  transform: scale(1.05);
+  background-color: #000;
+}
+
+
+
+/*body {
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
+  }
+  body::-webkit-scrollbar {
+      width: 10px;               
+    }
+    body::-webkit-scrollbar-track {
+      background: transparent;        
+    }
+    body::-webkit-scrollbar-thumb {
+      background-color: #f9004d;    
+      border-radius: 20px;       
+      border: 2px solid #ffffff;  
+    }
+  .hero {
+    scroll-behavior: smooth;
+    height: 100vh;
+    width: 100%;
+    background-image: url('./images/background.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  .logo {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  span {
+    color: #f9004d;
+  }
+  nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  nav ul li a:hover {
+    color: #f9004d;
+    transition: 0.4s;
+  }
+  .btn {
+    background-color: #f9004d;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform 0.3s;
+  }
+  .btn:hover {
+    transform: scale(1.2);
+  }
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+  }
+  h1 {
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+  }
+  h3 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+  h4 {
+    color: #fcfc;
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+  .newslatter form {
+   
+    width: 280px;
+    max-width: 100%;
+    position: relative;
+  }
+  .newslatter form input:first-child {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #f9004d;
+    outline: none;
+    border-radius: 30px;
+  }
+  .newslatter form input:last-child {
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #f9004d;
+    color: white;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    top: 6px;
+    right: -140px;
+  }
+  .newslatter form input:hover:last-child {
+    transition: 0.1;
+    transform: scale(1.05);
+    background-color: #000;
+  }
+  .about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+  }
+  .about img {
+    height: auto;
+    width: 430px;
+    transition: 0.5s;
+  }
+  .about img:hover {
+  
+    transform: scale(1.01);
+  }
+  .about-text {
+    width: 550px;
+  }
+  .main {
+    width: 1130px;
+    max-width: 95%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .about-text h2 {
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  .about-text h5 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+  }
+  .about-text p {
+    color: #fcfc;
+    letter-spacing: 1px;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 45px;
+  }
+  button {
+    background-color: #f9004d;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: 0.4s;
+  }
+  button:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+  }
+  .service {
+    background-color: #101010;
+    width: 100%;
+    padding: 100px 0px;
+  }
+  .title h2 {
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+  }
+  .container swiper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:80%;
+    min-height: 400px;
+  }
+  .card-wrapper {
+  
+    height: 405px;
+    width: 40%;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  .card-wrapper i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #f9004d;
+  }
+  /* Swiper Navigation Arrow Styles */
+/* Ensure the swiper-container takes up the full width of the service section */
+.swiper-container {
+  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+/* Position the navigation arrows */
+/*.swiper-button-prev,
+.swiper-button-next {
+  color: #000;
+  background: rgba(255, 255, 255, 0.8); /* Optional background to make the arrows stand out */
+ /* border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-prev {
+  left: 10px; 
+}
+
+.swiper-button-next {
+  right: 10px; 
+}/*
+/*
+
+  h5 {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+  }
+  .pra p {
+    color: #fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+  }
+  .card .button {
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: 0.4s;
+  }
+  
+  .card .button:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+  }
+  
+  .contact-me {
+    width: 100%;
+    height: 290px;
+    background: #191919;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact-me p {
+    color: white;
+  }
+  .contact-me .button-two {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: 0.4s;
+  }
+  
+  .contact-me .button-two:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+  }
+  
+  footer {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer p:nth-child(1) {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  footer p:nth-child(2) {
+    color: white;
+    font-size: 17px;
+    width: 500px;
+    line-height: 26px;
+    text-align: center;
+  }*/
+  .image{
+    display:flex;
+  }
+  .social {
+    display: flex;
+  }/*
+  .social a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9004d;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .social a:hover {
+    transform: rotate(360deg) scale(1.3);
+    transition: 0.5s;
+  }
+  .end {
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    font-size: 10px;
+  }*/
+  /* Styling the search container */
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+/* Styling the input field */
+.search-input {
+  width: 250px;
+  padding: 10px 15px;
+  border: 2px solid #f9004d;
+  border-radius: 30px 0 0 30px; /* Rounded left corners */
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Change border color on focus */
+.search-input:focus {
+  border-color: #333; /* Darker border when focused */
+}
+
+/* Styling the search button */
+.search-button {
+  background-color: #f9004d;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 0 30px 30px 0; /* Rounded right corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Adding a hover effect on the button */
+.search-button:hover {
+  background-color: #333; /* Darker background on hover */
+  transform: scale(1.1); /* Slightly increase the size on hover */
+}
+
+/* Styling the search icon */
+.search-button i {
+  font-size: 16px; /* Adjust the icon size as needed */
+}
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&family=Rubik:wght@400;500;700&display=swap");
+
+:root {
+  --light: #ffffff;
+  --dark: #000;
+}
